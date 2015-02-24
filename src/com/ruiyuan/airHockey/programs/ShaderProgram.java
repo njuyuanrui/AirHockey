@@ -14,9 +14,9 @@ public class ShaderProgram {
 	protected static final String U_TEXTURE_UNIT = "u_TextureUnit";
 	
 	//attribute
-	protected static final String A_POSITION_STRING = "a_Position";
+	protected static final String A_POSITION = "a_Position";
 	protected static final String A_COLOR = "a_Color";
-	protected static final String A_TEXTURE_COORDINATE_STRING = "a_TextureCoordinates";
+	protected static final String A_TEXTURE_COORDINATES = "a_TextureCoordinates";
 	
 	//ShaderProgram
 	protected final int program;

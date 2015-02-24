@@ -5,6 +5,7 @@ import static android.opengl.GLES20.glDrawArrays;
 
 import com.ruiyuan.airHockey.Constants;
 import com.ruiyuan.airHockey.data.VertexArray;
+import com.ruiyuan.airHockey.programs.TextureShaderProgram;
 
 public class Table {
 	private static final int POSITION_COMPONENT_COUNT = 2;
@@ -18,7 +19,7 @@ public class Table {
 		   0f,	 0f,	0.5f, 0.5f,
 		-0.5f,-0.8f,      0f, 0.9f,
 		 0.5f,-0.8f,      1f, 0.9f,
-		 0.5f,-0.8f,      1f, 0.1f,
+		 0.5f, 0.8f,      1f, 0.1f,
 		-0.5f, 0.8f,      0f, 0.1f,
 		-0.5f,-0.8f,      0f, 0.9f
 		
@@ -36,7 +37,7 @@ public class Table {
 										 POSITION_COMPONENT_COUNT,
 										 STRIDE);
 		vertexArray.setVertexAttribPoint(POSITION_COMPONENT_COUNT, 
-										 textureShaderPorgram.getTextureCoordinatesAttributeLocation,
+										 textureShaderPorgram.getTextureCoordinatesAttributeLocation(),
 										 TEXTURE_COORDINATES_COMPONENT_COUNT,
 										 STRIDE);		
 		

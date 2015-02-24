@@ -49,7 +49,7 @@ public class TextureHelper {
 		
 		glGenerateMipmap(GL_TEXTURE_2D);
 		glBindTexture(GL_TEXTURE_2D, 0);
-		
+		bitmap.recycle();
 		return textureObjectIDs[0];
 		
 		
