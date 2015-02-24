@@ -10,7 +10,7 @@ import android.content.Context;
 
 public class ShaderProgram {
 	//uniform
-	protected static final String U_MATRIX = "u_MAtrix";
+	protected static final String U_MATRIX = "u_Matrix";
 	protected static final String U_TEXTURE_UNIT = "u_TextureUnit";
 	
 	//attribute
