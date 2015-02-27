@@ -20,7 +20,7 @@ public class ColorShaderProgram extends ShaderProgram {
 		
 		uMatrixLocation = glGetUniformLocation(program, U_MATRIX);
 		aPositionLocation = glGetAttribLocation(program, A_POSITION);
-		uColorLocation = glGetAttribLocation(program, U_COLOR);
+		uColorLocation = glGetUniformLocation(program, U_COLOR);
 		
 	}
 	
@@ -32,7 +32,7 @@ public class ColorShaderProgram extends ShaderProgram {
 	public int getPositionAttributeLocation(){
 		return aPositionLocation;
 	}
-	public int getColorAttributeLocation(){
+	/*public int getColorAttributeLocation(){
 		return uColorLocation;
-	}
+	}*/
 }
